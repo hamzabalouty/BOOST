@@ -1,0 +1,64 @@
+.faqs{
+    max-width: 100%;
+    margin-top: 50px;
+}
+.faqs-container{
+    width: 100%;
+    padding: 50px 70px;
+    display: flex;
+    gap: 2%;
+}
+.faqs-content,
+.faqs-image{
+    width: 48%;
+}
+.faqs-content h5,
+.faqs-content h2,
+.faqs-content p,
+.faqs-text{
+    color: #012840;
+}
+.faqs-content h2,
+.faqs-content p,
+.faqs-text{
+    margin-top: 30px;
+}
+.faqs-image img{
+    width: 100%;
+    height: 500px;
+}
+.faqs-content h5{
+    font-size: 20px;
+}
+.faqs-content h2{
+    font-size: 30px;
+}
+.faqs-content p{
+    font-size: 17px;
+}
+.faqs-collapse{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+/* Start Rwd */
+@media screen and (max-width: 767px) {
+    .faqs{
+        max-width: 100%;
+    }
+    .faqs-container{
+        width: 100%;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .faqs-content,
+    .faqs-image{
+        width: 100%;
+    }
+    .faqs-image{
+        margin-top: 75px;
+    }
+}
+/* End Rwd */
+

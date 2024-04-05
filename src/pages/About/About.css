@@ -1,0 +1,134 @@
+.about{
+    max-width: 100%;
+    margin: 70px 0px;
+    z-index: 1;
+}
+.about-container{
+    width: 100%;
+    padding: 20px 60px;
+}
+.about-head{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+.about-head h2,
+.about-head p{
+    width: 49%;
+}
+.about-head h2{
+    font-size: 45px;
+    border-right: 1px solid #0476D9;
+}
+.about-head p{
+    line-height: 2;
+}
+.about-video{
+    margin-top: 35px;
+}
+.about-team-container{
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    gap: 6%;
+    padding: 20px 60px;
+}
+.about-box{
+    width: 20%;
+}
+.about-box img{
+    width: 100%;
+    height: 300px;
+}
+.about-box-content{
+    margin-top: 15px;
+    padding-left: 20px;
+    border-left: 1px solid #0476D9;
+}
+.about-box-content h3{
+    color: #012840;
+    font-size: 30px;
+}
+.about-box-content p{
+    color: #0476D9;
+    margin-top: 10px;
+}
+
+/* Start Rwd */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .about{
+        max-width: 100%;
+    }
+    .about-team-container{
+        margin-top: 45px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10%;
+        padding: 20px 60px;
+    }
+    .about-box{
+        width: 45%;
+        margin-top: 50px;
+    }
+    .about-box img{
+        width: 100%;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .about{
+        max-width: 100%;
+    }
+    .about-team-container{
+        margin-top: 45px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 60px;
+    }
+    .about-box{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .about-box img{
+        width: 100%;
+        height: 600px;
+    }
+    .about-container{
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .about-head{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-head h2,
+    .about-head p{
+        width: 100%;
+    }
+    .about-head p{
+        margin-top: 20px;
+    }
+    .about-head h2{
+        padding-bottom: 15px;
+        font-size: 45px;
+        border-right: none;
+        border-bottom: 1px solid #0476D9;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about{
+        max-width: 100%;
+    }
+    .about-team-container{
+        padding: 20px;
+    }
+
+    .about-box img{
+        width: 100%;
+        height: 400px;
+    }
+}
+/* End Rwd */

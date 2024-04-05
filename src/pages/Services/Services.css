@@ -1,0 +1,116 @@
+.services{
+    max-width: 100%;
+}
+.services-container{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    padding: 20px 40px;
+    margin: 100px 0px;
+}
+.services-recent{
+    width: 25%;
+    color: #012840;
+}
+.services-det{
+    width: 70%;
+}
+.services-arrow-icon,
+.services-recent hr{
+    color: #0476D9;
+}
+.services-recent hr{
+    margin-top: 20px;
+}
+.services-recent ul {
+    margin-top: 25px;
+    padding-left: 20px;
+}
+.services-recent ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.services-recent ul li h3{
+    transition: .5s ease;
+}
+.services-recent ul li:hover h3{
+    color: #0476D9;
+}
+.services-det img{
+    width: 100%;
+    height: 500px;
+}
+.services-det h2{
+    font-size: 40px;
+    color: #012840;
+    margin: 20px 0px 30px;
+}
+.ser-par{
+    line-height: 1.8;
+    color: #012840;
+}
+.services-det-row{
+    margin: 55px 0px;
+    display: flex;
+    gap: 4%;
+}
+.services-det-row ul,
+.services-det-image {
+    width: 48%;
+}
+.services-det-row ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0px;
+}
+.services-det-row ul li p{
+    color: #012840;
+}
+.services-arrow-icon{
+    color: #0476D9;
+}
+.services-det-row img{
+    width: 100%;
+    height: 300px;
+}
+
+
+/* Start Rwd */
+@media screen and (max-width: 767px) {
+    .services{
+        max-width: 100%;
+    }
+    .services-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+        margin: 100px 0px;
+    }
+    .services-recent{
+        width: 100%;
+        color: #012840;
+    }
+    .services-det{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .services-det-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .services-det-row ul,
+    .services-det-image {
+        width: 100%;
+    }
+    .services-det-image{
+        margin: 35px 0px;
+    }
+    .services-det-image img{
+        height: 450px;
+    }
+}
+/* End Rwd */

@@ -1,0 +1,110 @@
+.footer{
+    max-width: 100%;
+    background-color: #012840;
+}
+.footer-container{
+    width: 100%;
+    padding: 40px 60px;
+    display: flex;
+    gap: 6%;
+}
+.footer-col{
+    width: 20%;
+}
+.footer-col img{
+    width: 80%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.footer-col hr{
+    background-color: #0476D9;
+    border: 1px solid #0476D9;
+    height: 1px;
+    width: 60px;
+    margin-top: 20px;
+}
+.footer-col h4{
+    font-size: 25px;
+    color: #fff;
+}
+.footer-col p{
+    color: #fff;
+    transition: .5s ease;
+}
+.footer-col-icon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    transition: .5s ease;
+}
+.footer-col-icon:hover p{
+    color: #0476D9;
+}
+.footer-r-icon{
+    color: #0476D9;
+}
+.last-row-foot p{
+    margin-top: 20px;
+}
+
+/* Start Rwd */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .footer{
+        max-width: 100%;
+    }
+    .footer-container{
+        width: 100%;
+        padding: 40px 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+    .footer-col{
+        width: 45%;
+        margin-top: 40px;
+    }
+    .footer-col img{
+        width: 180px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer{
+        max-width: 100%;
+    }
+    .footer-container{
+        width: 100%;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-col{
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .footer-col img{
+        width: 180px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    .footer-col-icon{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-col {
+        position: relative;
+    }
+    .footer-col hr{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .last-row-foot p{
+        margin-top: 40px;
+    }
+}
+/* End Rwd */

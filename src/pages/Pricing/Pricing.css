@@ -1,0 +1,98 @@
+.pricing{
+    max-width: 100%;
+}
+.pricing-container{
+    margin: 40px 0px;
+    padding: 0px 40px;
+    display: flex;
+    gap: 5%;
+}
+.pricing-box{
+    margin: 40px 0px;
+    width: 30%;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
+}
+.pricing-box h4{
+    color: #012840;
+    font-size: 30px;
+}
+.pricing-box h3{
+    color: #0476D9;
+    font-size: 35px;
+}
+.pricing-box h5{
+    color: #012840;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.pricing-box p{
+    color: #012840;
+}
+.pricing-box ul{
+    margin-top: 20px;
+}
+.pricing-box ul li{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.true-icon,
+.false-icon{
+    color: #0476D9;
+}
+.pricing-box button{
+    background-color: #0476D9;
+    border: 1px solid #0476D9;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .5s ease;
+    border-radius: 7px;
+    margin-top: 25px;
+    padding: 10px 20px;
+}
+.pricing-box button:hover{
+    background-color: #fff;
+    color: #0476D9;
+    transform: scale(0.9);
+}
+
+/* Start Rwd */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .pricing{
+        max-width: 100%;
+    }
+    .pricing-container{
+        margin: 40px 0px;
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+    .pricing-box{
+        margin: 40px 0px;
+        width: 48%;
+        padding: 20px 30px;
+    }
+}
+@media screen and (max-width: 767px){
+    .pricing{
+        max-width: 100%;
+    }
+    .pricing-container{
+        margin: 40px 0px;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing-box{
+        margin: 40px 0px;
+        width: 100%;
+        padding: 20px 30px;
+    }
+}
+/* End Rwd */

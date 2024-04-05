@@ -1,0 +1,151 @@
+.ourservices{
+    max-width: 100%;
+    padding: 80px 0;
+    background-color: #f6f6f6;
+}
+.ourservices-title{
+    text-align: center;
+    color: #012840;
+}
+.ourservices-title h3{
+    font-size: 28px;
+}
+.ourservices-container{
+    margin-top: 45px;
+    width: 100%;
+    padding: 0px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.ourservices-box{
+    background-color: #fff;
+    padding: 20px;
+    width: 32%;
+    text-align: left;
+    transition: .5s ease;
+    position: relative;
+    margin-top: 50px;
+}
+.ourservices-box:hover{
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+.ourservices-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 25px;
+    height: 40px;
+    width: 25px;
+    transition: .5s ease;
+    background-color: #0476D9;
+}
+.ourservices-box::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    height: 25px;
+    width: 50px;
+    transition: .5s ease;
+    background-color: #0476D9;
+}
+.ourservices-box:hover::before{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 40px;
+    width: 50px;
+}
+.ourservices-box:hover::after{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 50px;
+    width: 50px;
+}
+.ourservices-box img{
+    width: 50px;
+    height: 50px;
+}
+.ourservices-box h3,
+.ourservices-box p{
+    margin-top: 20px;
+    color: #012840;
+}
+.ourservices-box h3{
+    font-size: 25px;
+}
+.ourservices-box p{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.ourser-link{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: .5s ease;
+    color: #0476D9;
+    cursor: pointer;
+}
+.ourservices-link,
+.ourservices-r-icon{
+    transition: .5s ease;
+    text-decoration: none;
+    color: #0476D9;
+    font-size: 17px;
+}
+.ourser-link:hover .ourservices-link,
+.ourser-link:hover .ourservices-r-icon{
+    color: #012840;
+}
+.ourservices-box hr{
+    color: #0476D9;
+    margin-bottom: 30px;
+}
+
+/* Start Rwd */
+@media screen and (min-width: 401px) and (max-width: 767px) {
+    .ourservices{
+        max-width: 100%;
+    }
+    .ourservices-container{
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+    .ourservices-box{
+        width: 45%;
+    }
+    .ourservices-box h3{
+        font-size: 20px;
+    }
+    .ourservices-box p{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .ourservices{
+        max-width: 100%;
+    }
+    .ourservices-container{
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ourservices-box{
+        width: 100%;
+    }
+    .ourservices-box h3{
+        font-size: 22px;
+    }
+    .ourservices-box p{
+        margin-bottom: 30px;
+        font-size: 19px;
+    }
+}
+/* End Rwd */
